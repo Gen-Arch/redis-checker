@@ -1,0 +1,10 @@
+
+version: '3'
+services:
+  redis50:
+    image: "redis:5.0.5"
+    ports:
+      - "6379:6379"
+    command: --port 6379
+    volumes:
+      - "./data/redis50:/data"
